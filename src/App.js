@@ -46,7 +46,7 @@ function App() {
     <>
     <h1>My REACT ToDo App</h1>
     
-    <input  ref={todoNameRef} type="text" />
+    <input  ref={todoNameRef} type="text" placeholder="Write a new todo" />
     <br></br>
 
     <button onClick={handleAddTodo}>Add Todo</button>
