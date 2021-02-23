@@ -44,11 +44,22 @@ function App() {
 
   return (
     <>
-    <TodoList todos ={todos} toggleTodo={toggleTodo} />
+    <h1>My REACT ToDo App</h1>
+    
     <input  ref={todoNameRef} type="text" />
+    <br></br>
+
     <button onClick={handleAddTodo}>Add Todo</button>
-    <button onClick={handleClearTodos}>Clear Complete</button>
-    <div>{todos.filter(todo => !todo.complete ).length} left to do</div>
+
+    <button onClick={handleClearTodos}>Clear Completed</button>
+    <hr></hr>
+    <h2>ToDos</h2>
+
+    <TodoList todos ={todos} toggleTodo={toggleTodo} />
+    <br></br>
+    <hr></hr>
+
+    <h3>{todos.filter(todo => !todo.complete ).length} left to do</h3>
     </>
   )
 }
